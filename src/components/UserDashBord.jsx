@@ -11,7 +11,7 @@ export default function UserDashBord() {
   const [todo, setTodo] = useState('');
   const [addTodo, setAddTodo] = useState(false);
   const {
-    todos, loading, error, setTodos,
+    todos, loading, setTodos,
   } = useFetchTodos();
   const [edit, setEdit] = useState(null);
   const [editedValue, setEditedValue] = useState();
