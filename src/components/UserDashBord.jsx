@@ -84,7 +84,7 @@ export default function UserDashBord() {
 
       {userInfo && !loading && (
       <>
-        {Object.keys(todos).map((t, i) => (
+        {Object.keys(todos).map((t) => (
           <TodoCard
             todo={todos[t]}
             key={t}

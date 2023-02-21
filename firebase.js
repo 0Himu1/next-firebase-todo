@@ -4,12 +4,12 @@ import { getFirestore } from 'firebase/firestore';
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyDMJsTWVi9hDLRG_ANMGoI4ZF5bz5mU8iE',
-  authDomain: 'todo-cb2c0.firebaseapp.com',
-  projectId: 'todo-cb2c0',
-  storageBucket: 'todo-cb2c0.appspot.com',
-  messagingSenderId: '928942414609',
-  appId: '1:928942414609:web:cb0777f0784ef811c90ab0',
+  apiKey: process.env.NEXT_PUBLIC_APIKEY,
+  authDomain: process.env.NEXT_PUBLIC_AUTHDOMAIN,
+  projectId: process.env.NEXT_PUBLIC_PROJECTID,
+  storageBucket: process.env.NEXT_PUBLIC_STORAGEBUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_MESSAGINGSENDERID,
+  appId: process.env.NEXT_PUBLIC_APPID,
 };
 
 const app = initializeApp(firebaseConfig);
